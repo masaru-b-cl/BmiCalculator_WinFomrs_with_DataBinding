@@ -1,7 +1,7 @@
-BmiCalculator_WinFomrs_with_DataBinding
+データバインドを活用したWindowsフォームのBMI計算機
 =======================================
 
-データバインドを活用したWindowsフォームのBMI計算機
+## ポイント
 
 - PMパターン+データバインド
 - エラー表示はIDataErrorInfo+ErrorProvider
