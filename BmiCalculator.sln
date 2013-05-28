@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmiCalculator", "BmiCalculator\BmiCalculator.csproj", "{12357A0B-EB89-451C-B904-6147A3D25C4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmiCalculator.Test", "BmiCalculator.Test\BmiCalculator.Test.csproj", "{494F5EAA-9241-4B98-8BB8-18DFB19CD4CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12357A0B-EB89-451C-B904-6147A3D25C4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12357A0B-EB89-451C-B904-6147A3D25C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12357A0B-EB89-451C-B904-6147A3D25C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12357A0B-EB89-451C-B904-6147A3D25C4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494F5EAA-9241-4B98-8BB8-18DFB19CD4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494F5EAA-9241-4B98-8BB8-18DFB19CD4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494F5EAA-9241-4B98-8BB8-18DFB19CD4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494F5EAA-9241-4B98-8BB8-18DFB19CD4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
