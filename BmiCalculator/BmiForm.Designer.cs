@@ -34,15 +34,15 @@
       this.label6 = new System.Windows.Forms.Label();
       this.label5 = new System.Windows.Forms.Label();
       this.label4 = new System.Windows.Forms.Label();
+      this.bmiViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
       this.label3 = new System.Windows.Forms.Label();
       this.textBox2 = new System.Windows.Forms.TextBox();
       this.label2 = new System.Windows.Forms.Label();
       this.textBox1 = new System.Windows.Forms.TextBox();
       this.label1 = new System.Windows.Forms.Label();
       this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-      this.bmiViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bmiViewModelBindingSource)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
       this.SuspendLayout();
       // 
       // button2
@@ -93,6 +93,10 @@
       this.label4.TabIndex = 10;
       this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
       // 
+      // bmiViewModelBindingSource
+      // 
+      this.bmiViewModelBindingSource.DataSource = typeof(BmiCalculator.BmiViewModel);
+      // 
       // label3
       // 
       this.label3.AutoSize = true;
@@ -104,7 +108,7 @@
       // 
       // textBox2
       // 
-      this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bmiViewModelBindingSource, "Weight", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N1"));
+      this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bmiViewModelBindingSource, "Weight", true));
       this.textBox2.Location = new System.Drawing.Point(74, 77);
       this.textBox2.Name = "textBox2";
       this.textBox2.Size = new System.Drawing.Size(55, 19);
@@ -122,7 +126,7 @@
       // 
       // textBox1
       // 
-      this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bmiViewModelBindingSource, "Height", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N1"));
+      this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bmiViewModelBindingSource, "Height", true));
       this.textBox1.Location = new System.Drawing.Point(74, 52);
       this.textBox1.Name = "textBox1";
       this.textBox1.Size = new System.Drawing.Size(55, 19);
@@ -143,10 +147,6 @@
       this.errorProvider1.ContainerControl = this;
       this.errorProvider1.DataSource = this.bmiViewModelBindingSource;
       // 
-      // bmiViewModelBindingSource
-      // 
-      this.bmiViewModelBindingSource.DataSource = typeof(BmiCalculator.BmiViewModel);
-      // 
       // BmiForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -165,8 +165,8 @@
       this.Name = "BmiForm";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "BMI計算機";
-      ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bmiViewModelBindingSource)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
 
